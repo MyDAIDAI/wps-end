@@ -27,7 +27,7 @@ app.get("/v3/3rd/files/:file_id/download", (req, res) => {
   const retObj = {
     code: 0,
     data: {
-      url: "https://m.xiguacity.cn/11%E6%9C%8819%E6%97%A5%E9%BE%99%E6%B3%89%E4%BB%93%E5%8F%91%E8%B4%A7116%E5%A5%97L0.csv",
+      url: "https://m.xiguacity.cn/%E5%89%AF%E6%9C%AC%E7%94%9F%E4%BA%A7%E6%8E%92%E7%8F%AD%E8%A1%A8-WUH-20191230%20V2-1.xlsx",
     },
   };
   res.send(JSON.stringify(retObj));
@@ -74,7 +74,7 @@ app.get("/v3/3rd/files/:file_id/upload", (req, res) => {
       id: "9",
       modifier_id: "404",
       modify_time: 1670328304,
-      name: "统计月报.xlsx",
+      name: "副本生产排班表-WUH-20191230 V2-1.xlsx",
       size: 18961,
       version: 180,
     },
