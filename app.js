@@ -65,7 +65,7 @@ app.get("/v3/3rd/users", (req, res) => {
   res.send(JSON.stringify(retObj));
 });
 
-app.get("/v3/3rd/files/:file_id/upload", (req, res) => {
+app.post("/v3/3rd/files/:file_id/upload", (req, res) => {
   const retObj = {
     code: 0,
     data: {
