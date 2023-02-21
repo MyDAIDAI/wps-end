@@ -12,7 +12,7 @@ app.get("/v3/3rd/files/:file_id", (req, res) => {
     data: {
       create_time: 1670218748,
       creator_id: "404",
-      id: "9",
+      id: "EOCVQPCDCCE4ZJ2X6MTF",
       modifier_id: "404",
       modify_time: 1670328304,
       name: "副本生产排班表-WUH-20191230 V2-1.xlsx",
@@ -71,7 +71,47 @@ app.post("/v3/3rd/files/:file_id/upload", (req, res) => {
     data: {
       create_time: 1670218748,
       creator_id: "404",
-      id: "9",
+      id: "EOCVQPCDCCE4ZJ2X6MTF",
+      modifier_id: "404",
+      modify_time: 1670328304,
+      name: "副本生产排班表-WUH-20191230 V2-1.xlsx",
+      size: 18961,
+      version: 180,
+    },
+  };
+  res.send(JSON.stringify(retObj));
+});
+
+app.get("/v3/3rd/files/:file_id/upload/prepare", (req, res) => {
+  const retObj = {
+    code: 0,
+    data: {
+      digest_types: ["sha1"],
+    },
+    msg: "",
+  };
+  res.send(JSON.stringify(retObj));
+});
+
+app.post("/v3/3rd/files/:file_id/upload/address", (req, res) => {
+  const retObj = {
+    code: 0,
+    data: {
+      method: "POST",
+      url: "http://foo.bar.com/files/27",
+    },
+    msg: "",
+  };
+  res.send(JSON.stringify(retObj));
+});
+
+app.post("/v3/3rd/files/:file_id/upload/complete", (req, res) => {
+  const retObj = {
+    code: 0,
+    data: {
+      create_time: 1670218748,
+      creator_id: "404",
+      id: "EOCVQPCDCCE4ZJ2X6MTF",
       modifier_id: "404",
       modify_time: 1670328304,
       name: "副本生产排班表-WUH-20191230 V2-1.xlsx",
