@@ -33,6 +33,25 @@ app.get("/v3/3rd/files/:file_id/download", (req, res) => {
   res.send(JSON.stringify(retObj));
 });
 
+app.get("/v3/3rd/files/:file_id/permission", (req, res) => {
+  const retObj = {
+    code: 0,
+    data: {
+      comment: 1,
+      copy: 1,
+      download: 1,
+      history: 1,
+      print: 1,
+      read: 1,
+      rename: 1,
+      saveas: 1,
+      update: 1,
+      user_id: "404",
+    },
+  };
+  res.send(JSON.stringify(retObj));
+});
+
 app.get("/v3/3rd/users", (req, res) => {
   const retObj = {
     code: 0,
