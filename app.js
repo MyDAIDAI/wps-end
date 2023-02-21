@@ -27,7 +27,7 @@ app.get("/v3/3rd/files/:file_id/download", (req, res) => {
   const retObj = {
     code: 0,
     data: {
-      url: "https://m.xiguacity.cn/%E5%89%AF%E6%9C%AC%E7%94%9F%E4%BA%A7%E6%8E%92%E7%8F%AD%E8%A1%A8-WUH-20191230%20V2-1.xlsx",
+      url: "https://m.xiguacity.cn/test.xlsx",
     },
   };
   res.send(JSON.stringify(retObj));
